@@ -8,7 +8,7 @@
 <h3 align="center">My personal Arch Linux + Hyprland configuration and dotfiles</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.1.0-green") />
+  <img src="https://img.shields.io/badge/Version-0.2.0-green") />
   <img src="https://img.shields.io/badge/License-MIT-blue") />
 </p>
 
