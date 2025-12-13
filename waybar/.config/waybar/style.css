@@ -1,10 +1,11 @@
 @define-color bar-background-color rgba(40, 40, 40, 0.6);
-@define-color text-base-color #ebdbb2;
+@define-color text-base-color #ffffff;
 
 @define-color selected-background-color #b8bb26;
 @define-color selected-text-color #1d2021;
 @define-color highlighted-background-color #3c3836;
 @define-color highlighted-text-color #b8bb26;
+@define-color highlighted-background-urgent #eb4d4b;
 
 @define-color field-mpris-color rgba(152, 151, 26, 0.8);
 @define-color field-mpris-spotify-color rgba(29, 185, 84, 0.8);
@@ -21,15 +22,13 @@
 * {
   font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   border: none;
-  border-radius: 0px;
 }
 
 window#waybar {
   background-color: @bar-background-color;
   font-size: 12px;
   font-weight: bold;
-  color: #ffffff;
-  border-radius: 10px;
+  color: @text-base-color;
 }
 
 window#waybar.hidden {
@@ -39,12 +38,12 @@ window#waybar.hidden {
 #workspaces button,
 #custom-exit {
   /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
   /* Avoid rounded borders under each button name */
-  margin: 4px 1px;
-  border-radius: 16px;
-  padding: 0 8px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  padding: 0 4px;
   transition: 0.3s;
+  color: @text-base-color;
 }
 
 #workspaces button.active {
@@ -52,29 +51,23 @@ window#waybar.hidden {
   color: @selected-text-color;
 }
 
-#workspaces button:hover {
-  background-color: @highlighted-background-color;
-  color: @highlighted-text-color;
+#workspaces button.urgent {
+  background-color: @highlighted-background-urgent;
 }
 
-#workspaces button.urgent {
-  background-color: #eb4d4b;
+#workspaces button:hover {
+  color: @selected-text-color;
 }
 
 #custom-exit {
   background-color: @field-exit-background-color;
   color: @field-exit-text-color;
-  padding-right: 12px;
+  padding: 0 11px 0 8px;
 }
 
 #custom-exit:hover {
   background-color: @field-exit-text-color;
   color: @text-base-color;
-}
-
-#mode {
-  background-color: #64727d;
-  box-shadow: inset 0 -3px #ffffff;
 }
 
 #clock,
@@ -94,7 +87,7 @@ window#waybar.hidden {
 #power-profiles-daemon,
 #mpris {
   margin: 4px 0;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 #memory,
@@ -132,13 +125,6 @@ window#waybar.hidden {
   margin-right: 0;
 } */
 
-@keyframes blink {
-  to {
-    background-color: @text-base-color;
-    color: #000000;
-  }
-}
-
 label:focus {
   background-color: #000000;
 }
@@ -147,11 +133,8 @@ label:focus {
   background-color: @field-mpris-color;
 }
 
-#mpris.firefox {
-  background-color: @field-mpris-firefox-color;
-}
-
-#mpris.spotify {
+#mpris.spotify,
+#mpris.ncspot {
   background-color: @field-mpris-spotify-color;
 }
 
@@ -187,33 +170,4 @@ label:focus {
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
-}
-
-#privacy {
-  padding: 0;
-}
-
-#privacy-item {
-  padding: 0 5px;
-  color: white;
-}
-
-#privacy-item.screenshare {
-  background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-  background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-  background-color: #0069d4;
 }

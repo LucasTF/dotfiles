@@ -1,0 +1,21 @@
+// -*- mode: jsonc -*-
+{
+    "mpris": {
+      "player": "ncspot",
+      "format": "{player-icon} {title} - {artist}",
+      "format-playing": "{player_icon}  {status_icon} {title} - {artist}",
+      "format-paused": "{player_icon}  {status_icon} {title} - {artist}",
+      "format-len": 20,
+      "tooltip": false,
+      "player-icons": {
+        "default": "🎜",
+        "spotify": "",
+        "ncspot": "",
+        "mpv": "🎵"
+      },
+      "status-icons": {
+        "playing": "",
+        "paused": ""
+      }
+  }
+}
