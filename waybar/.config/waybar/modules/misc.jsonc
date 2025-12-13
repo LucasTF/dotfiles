@@ -1,13 +1,34 @@
 // -*- mode: jsonc -*-
 {
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+
   "clock": {
     "format": "{:%d/%m/%Y - %H:%M}",
     "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
-  "tray": {
-    // "icon-size": 21,
-    "spacing": 10
+  "custom/nc": {
+    "tooltip": true,
+    "format": "{0} {icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   },
 
   "custom/exit": {

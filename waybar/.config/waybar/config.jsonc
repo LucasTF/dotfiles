@@ -25,6 +25,7 @@
     "pulseaudio",
     "tray",
     "clock",
+    "custom/nc",
     "custom/exit"
   ]
   

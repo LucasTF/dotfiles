@@ -16,8 +16,9 @@
 @define-color field-network-disconnected-color rgba(204, 36, 29, 0.8);
 @define-color field-pulseaudio-volume-color rgba(69, 133, 136, 0.8);
 @define-color field-pulseaudio-muted-color rgba(204, 36, 29, 0.8);
-@define-color field-exit-text-color #cc241d;
-@define-color field-exit-background-color #282828;
+@define-color option-button-text-color #cc241d;
+@define-color option-button-background-color rgba(28,28,28,0.2);
+@define-color option-button-background-highlighted rgba(28,28,28,0.5);
 
 * {
   font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -36,7 +37,8 @@ window#waybar.hidden {
 }
 
 #workspaces button,
-#custom-exit {
+#custom-exit,
+#custom-nc {
   /* Use box-shadow instead of border so the text isn't offset */
   /* Avoid rounded borders under each button name */
   margin: 4px 2px;
@@ -59,14 +61,17 @@ window#waybar.hidden {
   color: @selected-text-color;
 }
 
-#custom-exit {
-  background-color: @field-exit-background-color;
-  color: @field-exit-text-color;
+#custom-exit,
+#custom-nc {
+  background-color: @option-button-background-color;
+  font-size: 16px;
   padding: 0 11px 0 8px;
+  color: #cce0dd;
 }
 
-#custom-exit:hover {
-  background-color: @field-exit-text-color;
+#custom-exit:hover,
+#custom-nc:hover {
+  background-color: @option-button-background-highlighted;
   color: @text-base-color;
 }
 
@@ -110,10 +115,6 @@ window#waybar.hidden {
 
 .modules-left > widget:first-child > #workspaces {
   margin-right: 0px;
-}
-
-.modules-right > widget:last-child > #custom-exit {
-  margin-left: 4px;
 }
 
 .modules-right {
@@ -169,5 +170,5 @@ label:focus {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
+  background-color: @highlighted-background-urgent;
 }
