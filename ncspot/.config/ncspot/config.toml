@@ -1,0 +1,4 @@
+initial_screen = "playlists"
+use_nerdfont = true
+notify = true
+library_tabs = ["tracks", "playlists", "browse"]
