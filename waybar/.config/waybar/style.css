@@ -10,18 +10,17 @@
 @define-color field-mpris-color rgba(152, 151, 26, 0.8);
 @define-color field-mpris-spotify-color rgba(29, 185, 84, 0.8);
 @define-color field-mpris-firefox-color rgba(214, 93, 14, 0.8);
-@define-color field-disk-color rgba(152, 151, 26, 0.8);
 @define-color field-memory-color rgba(104, 157, 106, 0.8);
 @define-color field-network-connected-color rgba(69, 133, 136, 0.8);
 @define-color field-network-disconnected-color rgba(204, 36, 29, 0.8);
 @define-color field-pulseaudio-volume-color rgba(69, 133, 136, 0.8);
 @define-color field-pulseaudio-muted-color rgba(204, 36, 29, 0.8);
 @define-color option-button-text-color #cc241d;
-@define-color option-button-background-color rgba(28,28,28,0.2);
-@define-color option-button-background-highlighted rgba(28,28,28,0.5);
+@define-color option-button-background-color rgba(0,0,0,0.5);
+@define-color option-button-background-highlighted rgba(0,0,0,0.9);
 
 * {
-  font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
   border: none;
 }
 
@@ -41,11 +40,15 @@ window#waybar.hidden {
 #custom-nc {
   /* Use box-shadow instead of border so the text isn't offset */
   /* Avoid rounded borders under each button name */
-  margin: 4px 2px;
   border-radius: 8px;
-  padding: 0 4px;
   transition: 0.3s;
+  font-size: 1rem;
   color: @text-base-color;
+}
+
+#workspaces button {
+  margin: 4px 2px;
+  padding: 0 4px;
 }
 
 #workspaces button.active {
@@ -64,8 +67,8 @@ window#waybar.hidden {
 #custom-exit,
 #custom-nc {
   background-color: @option-button-background-color;
-  font-size: 16px;
-  padding: 0 11px 0 8px;
+  margin: 4px 0;
+  padding: 0 8px;
   color: #cce0dd;
 }
 
@@ -76,36 +79,35 @@ window#waybar.hidden {
 }
 
 #clock,
-#battery,
 #memory,
-#disk,
-#temperature,
-#backlight,
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
 #mpris {
   margin: 4px 0;
   border-radius: 8px;
 }
 
 #memory,
-#disk,
+#clock,
 #network,
 #wireplumber,
 #pulseaudio,
 #mpris {
-  padding: 0 12px;
+  padding: 0 8px;
+}
+
+#tray {
+  margin: 4px 0;
+  padding: 0 8px;
+  background-color: @option-button-background-color;
 }
 
 #clock {
-  padding: 0 4px;
+  margin: 4px 0;
+  font-size: 0.9rem;
+  background-color: @option-button-background-color;
 }
 
 #window,
@@ -126,10 +128,6 @@ window#waybar.hidden {
   margin-right: 0;
 } */
 
-label:focus {
-  background-color: #000000;
-}
-
 #mpris {
   background-color: @field-mpris-color;
 }
@@ -143,12 +141,7 @@ label:focus {
   background-color: @field-memory-color;
 }
 
-#disk {
-  background-color: @field-disk-color;
-}
-
 #network {
-  padding-left: 8px;
   background-color: @field-network-connected-color;
 }
 
@@ -162,13 +155,4 @@ label:focus {
 
 #pulseaudio.muted {
   background-color: @field-pulseaudio-muted-color;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: @highlighted-background-urgent;
 }

@@ -1,16 +1,17 @@
 // -*- mode: jsonc -*-
 {
     "hyprland/workspaces": {
-        "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{icon}",
-        "persistent-workspaces": {
-        "*": 3
-        }
+      "on-click": "activate",
+      "active-only": false,
+      "all-outputs": true,
+      "show-special": true,
+      "format": "{icon}",
+      "format-icons": {
+        "discord": "",
+        "spotify": ""
+      }
     },
     "hyprland/window": {
-      "format": "{}",
       "rewrite": {
         "(.*) - Discord": "💬 Discord",
         "(.*) — Mozilla Firefox": "🌎 $1",

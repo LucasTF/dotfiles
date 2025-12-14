@@ -1,12 +1,12 @@
 // -*- mode: jsonc -*-
 {
   "tray": {
-    // "icon-size": 21,
-    "spacing": 10
+    "icon-size": 20,
+    "spacing": 8
   },
 
   "clock": {
-    "format": "{:%d/%m/%Y - %H:%M}",
+    "format": "{:%d/%m/%Y | %H:%M}",
     "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
 

@@ -19,7 +19,6 @@
 
   "modules-right": [
     "mpris",
-    "disk",
     "memory",
     "network",
     "pulseaudio",
