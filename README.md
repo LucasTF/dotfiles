@@ -28,10 +28,15 @@
 
 ## Installation
 
+#### 1. Download the dotfiles using git
 ```bash
-# Clone this repository
 $ git clone https://github.com/LucasTF/dotfiles ~/.dotfiles
 ```
+#### 2. Activate the configurations using GNU stow
+```bash
+$ stow -d ~/.dotfiles/configs -t ~/ <config_name>
+```
+Replace _<config_name>_ with the dotfiles you want to import
 
 ## License
 
