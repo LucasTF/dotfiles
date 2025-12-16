@@ -8,7 +8,8 @@
       "format": "{icon}",
       "format-icons": {
         "discord": "",
-        "spotify": ""
+        "spotify": "",
+        "10": ""
       }
     },
     "hyprland/window": {
