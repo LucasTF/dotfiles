@@ -10,20 +10,18 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "󰈀",
-    "tooltip-format": "󰈀 {ipaddr}/{cidr} via {gwaddr}",
+    "format-ethernet": "󰛳",
+    "tooltip-format": "󰛳 {ipaddr}/{cidr} via {gwaddr}",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "󰈀",
-    "format-alt": "󰈀 {ifname}: {ipaddr}/{cidr}"
+    "format-disconnected": "󰅛",
+    "format-alt": "󰛳 {ifname}: {ipaddr}/{cidr}"
   },
 
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{icon} {volume}%",
     "format-muted": " ",
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
       "default": ["", "", ""]
     }
   }

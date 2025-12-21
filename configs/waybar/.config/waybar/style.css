@@ -11,10 +11,9 @@
 @define-color field-mpris-spotify-color rgba(29, 185, 84, 0.8);
 @define-color field-mpris-firefox-color rgba(214, 93, 14, 0.8);
 @define-color field-memory-color rgba(104, 157, 106, 0.8);
-@define-color field-network-connected-color rgba(69, 133, 136, 0.8);
 @define-color field-network-disconnected-color rgba(204, 36, 29, 0.8);
-@define-color field-pulseaudio-volume-color rgba(69, 133, 136, 0.8);
-@define-color field-pulseaudio-muted-color rgba(204, 36, 29, 0.8);
+@define-color field-wireplumber-volume-color rgba(69, 133, 136, 0.8);
+@define-color field-wireplumber-muted-color rgba(204, 36, 29, 0.8);
 @define-color option-button-text-color #cc241d;
 @define-color option-button-background-color rgba(0,0,0,0.5);
 @define-color option-button-background-highlighted rgba(0,0,0,0.9);
@@ -37,6 +36,7 @@ window#waybar.hidden {
 
 #workspaces button,
 #custom-exit,
+#network,
 #custom-nc {
   /* Use box-shadow instead of border so the text isn't offset */
   /* Avoid rounded borders under each button name */
@@ -81,7 +81,6 @@ window#waybar.hidden {
 #clock,
 #memory,
 #network,
-#pulseaudio,
 #wireplumber,
 #tray,
 #mpris {
@@ -93,7 +92,6 @@ window#waybar.hidden {
 #clock,
 #network,
 #wireplumber,
-#pulseaudio,
 #mpris {
   padding: 0 8px;
 }
@@ -104,7 +102,8 @@ window#waybar.hidden {
   background-color: @option-button-background-color;
 }
 
-#clock {
+#clock,
+#network {
   margin: 4px 0;
   font-size: 0.9rem;
   background-color: @option-button-background-color;
@@ -141,18 +140,14 @@ window#waybar.hidden {
   background-color: @field-memory-color;
 }
 
-#network {
-  background-color: @field-network-connected-color;
+#wireplumber {
+  background-color: @field-wireplumber-volume-color;
+}
+
+#wireplumber.muted {
+  background-color: @field-wireplumber-muted-color;
 }
 
 #network.disconnected {
-  background-color: @field-network-disconnected-color;
-}
-
-#pulseaudio {
-  background-color: @field-pulseaudio-volume-color;
-}
-
-#pulseaudio.muted {
-  background-color: @field-pulseaudio-muted-color;
+  color: @field-network-disconnected-color;
 }

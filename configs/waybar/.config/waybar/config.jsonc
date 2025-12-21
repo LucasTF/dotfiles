@@ -20,8 +20,8 @@
   "modules-right": [
     "mpris",
     "memory",
+    "wireplumber",
     "network",
-    "pulseaudio",
     "tray",
     "clock",
     "custom/nc",
