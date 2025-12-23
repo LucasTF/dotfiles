@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "mpris": {
-      "player": "ncspot",
+      "player": ["ncspot", "spotify"],
       "format": "{player-icon} {title} - {artist}",
       "format-playing": "{player_icon}  {status_icon} {title} - {artist}",
       "format-paused": "{player_icon}  {status_icon} {title} - {artist}",
