@@ -15,10 +15,8 @@
       }
     },
     "hyprland/window": {
-      "rewrite": {
-        "(.*) - Discord": "💬 Discord",
-        "(.*) — Mozilla Firefox": "🌎 $1",
-        "(.*) - Brave": "🌎 $1"
-      }
+      "icon": true,
+      "icon-size": 16,
+      "max-length": 64
     }
 }
