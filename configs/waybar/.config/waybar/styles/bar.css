@@ -1,0 +1,21 @@
+@import "colors.css";
+
+window#waybar {
+  background-color: @wb-d-bg;
+  color: @wb-d-txt;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.modules-left {
+  margin-left: 0.25rem;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-right: 0.25rem;
+}
+
+.modules-right {
+  margin-right: 0.5rem;
+}

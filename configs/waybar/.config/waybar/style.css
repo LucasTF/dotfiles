@@ -1,6 +1,3 @@
-@define-color bar-background-color rgba(40, 40, 40, 0.6);
-@define-color text-base-color #ffffff;
-
 @define-color selected-background-color #b8bb26;
 @define-color selected-text-color #1d2021;
 @define-color highlighted-background-color #3c3836;
@@ -14,6 +11,8 @@
 @define-color field-network-disconnected-color rgba(204, 36, 29, 0.8);
 @define-color field-wireplumber-volume-color rgba(69, 133, 136, 0.8);
 @define-color field-wireplumber-muted-color rgba(204, 36, 29, 0.8);
+@define-color button-special-workspace-bg rgba(0,0,0,0.2);
+@define-color button-special-workspace-border rgba(0,0,0,0.5);
 @define-color option-button-text-color #cc241d;
 @define-color option-button-background-color rgba(0,0,0,0.5);
 @define-color option-button-background-highlighted rgba(0,0,0,0.9);
@@ -21,47 +20,21 @@
 * {
   font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
   border: none;
+  border-radius: 0.5rem;
 }
 
-window#waybar {
-  background-color: @bar-background-color;
-  font-size: 12px;
-  font-weight: bold;
-  color: @text-base-color;
-}
+@import "styles/bar.css";
+@import "styles/colors.css";
+@import "styles/workspaces.css";
 
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-#workspaces button,
 #custom-exit,
 #network,
 #custom-nc {
   /* Use box-shadow instead of border so the text isn't offset */
   /* Avoid rounded borders under each button name */
-  border-radius: 8px;
   transition: 0.3s;
   font-size: 1rem;
-  color: @text-base-color;
-}
-
-#workspaces button {
-  margin: 4px 2px;
-  padding: 0 4px;
-}
-
-#workspaces button.active {
-  background-color: @selected-background-color;
-  color: @selected-text-color;
-}
-
-#workspaces button.urgent {
-  background-color: @highlighted-background-urgent;
-}
-
-#workspaces button:hover {
-  color: @selected-text-color;
+  color: @wb-d-txt;
 }
 
 #custom-exit,
@@ -75,7 +48,7 @@ window#waybar.hidden {
 #custom-exit:hover,
 #custom-nc:hover {
   background-color: @option-button-background-highlighted;
-  color: @text-base-color;
+  color: @wbd-txt;
 }
 
 #clock,
@@ -85,7 +58,6 @@ window#waybar.hidden {
 #tray,
 #mpris {
   margin: 4px 0;
-  border-radius: 8px;
 }
 
 #memory,
@@ -108,24 +80,6 @@ window#waybar.hidden {
   font-size: 0.9rem;
   background-color: @option-button-background-color;
 }
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-  margin-right: 0px;
-}
-
-.modules-right {
-  margin-right: 4px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-/* .modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-} */
 
 #mpris {
   background-color: @field-mpris-color;

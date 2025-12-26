@@ -1,0 +1,40 @@
+/* COLORS */
+@define-color b16-d-yellow #fabd2f;
+@define-color b16-d-yellow-s #d79921;
+@define-color b16-d-cyan #8ec07c;
+@define-color b16-d-cyan-s #689d6a;
+@define-color b16-d-blue #83a598;
+@define-color b16-d-blue-s #458588;
+@define-color b16-d-purple #d3869b;
+@define-color b16-d-purple-s #b16286;
+@define-color b16-d-red #fb4934;
+@define-color b16-d-red-s #cc241d;
+@define-color b16-d-orange #fe8019;
+@define-color b16-d-orange-s #d65d0e;
+@define-color b16-d-green #b8bb26;
+@define-color b16-d-green-s #98971a;
+
+/* DISPLAY */
+@define-color b16-d-bg #282828;
+@define-color b16-d-bg-s #1d2021;
+@define-color b16-d-txt #ffffff;
+
+/* WAYBAR */
+@define-color wb-d-bg alpha(@b16-d-bg, 0.6);
+@define-color wb-d-txt @b16-d-txt;
+
+/* WORKSPACES */
+@define-color wsb-d-txt @b16-d-txt;
+@define-color wsb-d-txt-hover @b16-d-green;
+@define-color wsb-d-txt-active @b16-d-bg-s;
+@define-color wsb-d-bg-active @b16-d-green;
+@define-color wsb-d-bg-urgent @b16-d-red;
+@define-color wsb-d-border-hover @b16-d-green-s;
+@define-color wsb-d-border-active @b16-d-green-s;
+@define-color wsb-d-border-urgent @b16-d-red-s;
+@define-color wss-d-txt-hover @b16-d-yellow;
+@define-color wss-d-bg @b16-d-bg;
+@define-color wss-d-bg-active @b16-d-yellow;
+@define-color wss-d-border @b16-d-bg-s;
+@define-color wss-d-border-hover @b16-d-yellow-s;
+@define-color wss-d-border-active @b16-d-yellow-s;
