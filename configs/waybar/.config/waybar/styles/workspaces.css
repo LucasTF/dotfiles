@@ -27,8 +27,7 @@
 }
 
 #workspaces button.special {
-    background-color: @wss-d-bg;
-    box-shadow: inset 0 0 0 2px @wss-d-border;
+    color: @wss-d-txt;
 }
 
 #workspaces button.special:not(.active):hover {
@@ -37,6 +36,7 @@
 }
 
 #workspaces button.special.active {
+    color: @wss-d-txt-active;
     background-color: @wss-d-bg-active;
     box-shadow: inset 0 0 0 2px @wss-d-border-active;
 }

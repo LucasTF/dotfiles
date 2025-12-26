@@ -13,28 +13,41 @@
 @define-color b16-d-orange-s #d65d0e;
 @define-color b16-d-green #b8bb26;
 @define-color b16-d-green-s #98971a;
+@define-color b16-d-gray #928374;
+@define-color b16-black #0a0B0e;
+@define-color b16-white #ffffff;
+
+/* ACCENT COLORS */
+@define-color b16-pr-main @b16-d-green;
+@define-color b16-sc-main @b16-d-green-s;
+@define-color b16-pr-cotr @b16-d-yellow;
+@define-color b16-sc-cotr @b16-d-yellow-s;
 
 /* DISPLAY */
 @define-color b16-d-bg #282828;
-@define-color b16-d-bg-s #1d2021;
+@define-color b16-d-bg-s #141a24;
 @define-color b16-d-txt #ffffff;
 
 /* WAYBAR */
-@define-color wb-d-bg alpha(@b16-d-bg, 0.6);
+@define-color wb-d-bg alpha(@b16-d-bg, 0.5);
 @define-color wb-d-txt @b16-d-txt;
 
-/* WORKSPACES */
+/* WORKSPACES BUTTONS */
 @define-color wsb-d-txt @b16-d-txt;
 @define-color wsb-d-txt-hover @b16-d-green;
-@define-color wsb-d-txt-active @b16-d-bg-s;
-@define-color wsb-d-bg-active @b16-d-green;
+@define-color wsb-d-txt-active @b16-pr-main;
+@define-color wsb-d-bg-active @b16-d-bg-s;
 @define-color wsb-d-bg-urgent @b16-d-red;
 @define-color wsb-d-border-hover @b16-d-green-s;
 @define-color wsb-d-border-active @b16-d-green-s;
 @define-color wsb-d-border-urgent @b16-d-red-s;
-@define-color wss-d-txt-hover @b16-d-yellow;
-@define-color wss-d-bg @b16-d-bg;
-@define-color wss-d-bg-active @b16-d-yellow;
-@define-color wss-d-border @b16-d-bg-s;
+
+/* SPECIAL WORKSPACES BUTTONS */
+@define-color wss-d-txt alpha(@b16-white, 0.5);
+@define-color wss-d-txt-active @b16-pr-cotr;
+@define-color wss-d-txt-hover @b16-pr-cotr;
+@define-color wss-d-bg @b16-d-bg-s;
+@define-color wss-d-bg-active @b16-d-bg-s;
+@define-color wss-d-border @b16-d-yellow-s;
 @define-color wss-d-border-hover @b16-d-yellow-s;
 @define-color wss-d-border-active @b16-d-yellow-s;
