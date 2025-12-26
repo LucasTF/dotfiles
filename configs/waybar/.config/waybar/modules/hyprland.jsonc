@@ -7,6 +7,7 @@
       "show-special": true,
       "format": "{icon}",
       "format-icons": {
+        "code": "󰨞",
         "discord": "",
         "spotify": "",
         "magic": "",
