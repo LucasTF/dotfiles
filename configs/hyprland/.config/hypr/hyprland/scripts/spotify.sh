@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-WORKSPACE="spotify"
-
-if hyprctl workspaces -j | jq -e --arg ws "special:$WORKSPACE" 'any(.[]; .name == $ws)' > /dev/null; then
-    hyprctl dispatch togglespecialworkspace "$WORKSPACE"
+if hyprctl workspaces -j | jq -e --arg ws "special:spotify" 'any(.[]; .name == $ws)' > /dev/null; then
+    hyprctl dispatch togglespecialworkspace "spotify"
     exit 0
 fi
 
-alacritty --class "spotify_cava" -e cava &
-sleep 0.1
-alacritty --class "spotify_ncspot" -e ncspot &
-sleep 0.1
-hyprctl dispatch togglesplit
-hyprctl dispatch resizeactive exact "100% 70%"
+if [[ $AL_MUSIC_STREAMING_APP -eq "spotify" ]] then
+    spotify-launcher &
+elif [[ $AL_MUSIC_STREAMING_APP -eq "ncspot" ]] then
+    alacritty --class "spotify" -e ncspot &
+else
+    hyprctl notify 3 5000 0 "Environment Variable 'AL_MUSIC_STREAMING_APP' invalid."
+    exit 1
+fi
