@@ -8,6 +8,7 @@
 
     "custom/separator": {
         "tooltip": false,
-        "format": ""
+        "format": "",
+        "on-click": "rofi -show drun"
     }
 }

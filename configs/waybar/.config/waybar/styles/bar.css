@@ -7,13 +7,13 @@ window#waybar {
 }
 
 .modules-left > widget:nth-child(n+3) > * {
-  margin-right: 0.25rem;
-}
-
-.modules-right {
   margin-right: 0.5rem;
 }
 
 .modules-right > widget > * {
   margin: 0.25rem 0.25rem;
+}
+
+.modules-right > widget:last-child > * {
+  margin-right: 0.6rem;
 }
