@@ -5,7 +5,22 @@
       "active-only": false,
       "all-outputs": true,
       "show-special": true,
-      "format": "{icon}",
+      "format": "{windows}",
+      "window-rewrite": {
+        "alacritty": "",
+        "kitty": "",
+        "codium": "󰨞",
+        "spotify": "",
+        "brave": "",
+        "firefox": "",
+        "thunar": "",
+        "dolphin": "",
+        "steam": "",
+        "discord": "",
+        "vesktop": ""
+      },
+      "window-rewrite-default": "",
+      "format-window-separator": "",
       "format-icons": {
         "code": "󰨞",
         "discord": "",

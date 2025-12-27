@@ -1,7 +1,7 @@
 #workspaces button {
     color: @wsb-d-txt;
     transition: 0.3s;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0.25rem 0.125rem;
     padding: 0 0.5rem;
 }
