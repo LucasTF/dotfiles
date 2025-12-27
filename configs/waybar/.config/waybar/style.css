@@ -23,11 +23,12 @@
   border-radius: 0.5rem;
 }
 
-@import "styles/bar.css";
 @import "styles/colors.css";
+@import "styles/bar.css";
+@import "styles/start.css";
 @import "styles/workspaces.css";
 
-#custom-exit,
+#custom-session,
 #network,
 #custom-nc {
   /* Use box-shadow instead of border so the text isn't offset */
@@ -37,27 +38,17 @@
   color: @wb-d-txt;
 }
 
-#custom-exit,
+#custom-session,
 #custom-nc {
   background-color: @option-button-background-color;
-  margin: 4px 0;
   padding: 0 8px;
   color: #cce0dd;
 }
 
-#custom-exit:hover,
+#custom-session:hover,
 #custom-nc:hover {
   background-color: @option-button-background-highlighted;
   color: @wbd-txt;
-}
-
-#clock,
-#memory,
-#network,
-#wireplumber,
-#tray,
-#mpris {
-  margin: 4px 0;
 }
 
 #memory,
@@ -69,14 +60,12 @@
 }
 
 #tray {
-  margin: 4px 0;
   padding: 0 8px;
   background-color: @option-button-background-color;
 }
 
 #clock,
 #network {
-  margin: 4px 0;
   font-size: 0.9rem;
   background-color: @option-button-background-color;
 }

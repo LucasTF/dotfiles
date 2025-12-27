@@ -51,3 +51,7 @@
 @define-color wss-d-border @b16-d-yellow-s;
 @define-color wss-d-border-hover @b16-d-yellow-s;
 @define-color wss-d-border-active @b16-d-yellow-s;
+
+/* START MENU */
+@define-color st-d-bg shade(@b16-sc-main, 0.25);
+@define-color st-d-bar @b16-sc-main;

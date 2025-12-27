@@ -1,0 +1,19 @@
+#custom-start {
+    font-size: 1.6rem;
+    color: @b16-black;
+    padding: 0 0.4rem 0 0.6rem;
+    background-color: @b16-sc-main;
+    border-radius: 0;
+    text-shadow: 0 0 8px darker(@b16-sc-main);
+}
+
+#custom-separator {
+    font-size: 1.6rem;
+    color: @b16-sc-main;
+    background-color: transparent;
+    text-shadow: 
+        1px -6px @b16-d-green,
+        7px 0 @b16-d-green,
+        1px 6px @b16-d-green;
+    margin-right: 0.8rem;
+}
