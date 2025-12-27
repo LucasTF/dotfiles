@@ -5,17 +5,25 @@
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 32, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
-  "spacing": 4, // Gaps between modules (4px)
+  // "spacing": 4, // Gaps between modules (4px)
   "reload_style_on_change": true,
 
   "include": [
     "~/.config/waybar/modules/hyprland.jsonc",
     "~/.config/waybar/modules/mpris.jsonc",
     "~/.config/waybar/modules/sysinfo.jsonc",
-    "~/.config/waybar/modules/misc.jsonc"
+    "~/.config/waybar/modules/misc.jsonc",
+    "~/.config/waybar/modules/customs/start.jsonc",
+    "~/.config/waybar/modules/customs/session.jsonc",
+    "~/.config/waybar/modules/customs/nc.jsonc"
   ],
 
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": [
+    "custom/start",
+    "custom/separator",
+    "hyprland/workspaces", 
+    "hyprland/window"
+  ],
 
   "modules-right": [
     "mpris",
@@ -25,7 +33,7 @@
     "tray",
     "clock",
     "custom/nc",
-    "custom/exit"
+    "custom/session"
   ]
   
 }

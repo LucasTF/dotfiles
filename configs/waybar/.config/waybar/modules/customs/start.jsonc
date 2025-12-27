@@ -1,0 +1,13 @@
+// -*- mode: jsonc -*-
+{
+    "custom/start": {
+        "tooltip": false,
+        "format": "",
+        "on-click": "rofi -show drun"
+    },
+
+    "custom/separator": {
+        "tooltip": false,
+        "format": ""
+    }
+}

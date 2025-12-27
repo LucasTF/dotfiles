@@ -1,0 +1,9 @@
+// -*- mode: jsonc -*-
+{
+  "custom/session": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Session Options",
+    "on-click": "wlogout -b 3"
+  }
+}
