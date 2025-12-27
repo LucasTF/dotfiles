@@ -1,0 +1,41 @@
+/* GENERIC */
+.modules-right > widget > * {
+    background-color: @md-background;
+    padding: 0 0.7rem;
+    box-shadow: inset 0 0 0 0.1875rem @md-border;
+    transition: 0.3s;
+}
+
+/* SHARED */
+#mpris,
+#memory,
+#wireplumber,
+#network {
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 
+        inset 0 -0.1875rem @md-info-border-down,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
+
+/* MPRIS */
+#mpris.playing {
+    color: @md-mpris-text-playing;
+    box-shadow: 
+        inset 0 -0.1875rem @md-mpris-border-playing,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
+
+#mpris.paused {
+    color: @md-mpris-text-paused;
+    box-shadow: 
+        inset 0 -0.1875rem @md-mpris-border-paused,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
+
+/* MEMORY */

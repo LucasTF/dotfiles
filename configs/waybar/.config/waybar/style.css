@@ -27,12 +27,11 @@
 @import "styles/bar.css";
 @import "styles/start.css";
 @import "styles/workspaces.css";
+@import "styles/modules.css";
 
-#custom-session,
+/* #custom-session,
 #network,
 #custom-nc {
-  /* Use box-shadow instead of border so the text isn't offset */
-  /* Avoid rounded borders under each button name */
   transition: 0.3s;
   font-size: 1rem;
   color: @wb-text;
@@ -74,11 +73,6 @@
   background-color: @field-mpris-color;
 }
 
-#mpris.spotify,
-#mpris.ncspot {
-  background-color: @field-mpris-spotify-color;
-}
-
 #memory {
   background-color: @field-memory-color;
 }
@@ -94,3 +88,5 @@
 #network.disconnected {
   color: @field-network-disconnected-color;
 }
+
+*/

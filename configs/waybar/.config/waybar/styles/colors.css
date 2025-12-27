@@ -33,6 +33,10 @@
 @define-color wb-background alpha(@background, 0.5);
 @define-color wb-text @foreground;
 
+/* START MENU */
+@define-color st-background @primary;
+@define-color st-bar @primary;
+
 /* WORKSPACES BUTTONS */
 @define-color wsb-text @foreground;
 @define-color wsb-text-hover @primary;
@@ -53,6 +57,16 @@
 @define-color wss-border-hover @secondary-s;
 @define-color wss-border-active @secondary-s;
 
-/* START MENU */
-@define-color st-background @primary;
-@define-color st-bar @primary;
+/* MODULES */
+@define-color md-background @foreground-s;
+@define-color md-border @background;
+@define-color md-info-border-up @background;
+@define-color md-info-border-left @background;
+@define-color md-info-border-down @background-s;
+@define-color md-info-border-right @background;
+
+/* MPRIS */
+@define-color md-mpris-text-playing lighter(@green);
+@define-color md-mpris-text-paused @green;
+@define-color md-mpris-border-playing lighter(@green-s);
+@define-color md-mpris-border-paused @green-s;
