@@ -78,3 +78,12 @@
 @define-color md-memory-warning-border @yellow-s;
 @define-color md-memory-critical-text @red;
 @define-color md-memory-critical-border @red-s;
+
+/* WIREPLUMBER */
+@define-color md-wireplumber-text @blue;
+@define-color md-wireplumber-border @blue-s;
+@define-color md-wireplumber-high-text lighter(@blue);
+@define-color md-wireplumber-high-border lighter(@blue-s);
+@define-color md-wireplumber-low-text darker(@blue);
+@define-color md-wireplumber-low-border darker(@blue-s);
+@define-color md-wireplumber-muted-text darker(@blue);

@@ -13,6 +13,14 @@
 
   "wireplumber": {
     "format": "{icon} {volume}%",
+    "states": {
+      "low": 0,
+      "medium": 35,
+      "high": 70
+    },
+    "format-low": " {volume}%",
+    "format-medium": " {volume}%",
+    "format-high": " {volume}%",
     "format-muted": " ",
     "format-icons": ["", "", ""]
   },
