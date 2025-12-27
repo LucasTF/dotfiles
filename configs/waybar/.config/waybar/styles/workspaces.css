@@ -1,5 +1,5 @@
 #workspaces button {
-    color: @wsb-d-txt;
+    color: @wsb-text;
     transition: 0.3s;
     font-size: 1.2rem;
     margin: 0.25rem 0.125rem;
@@ -7,34 +7,34 @@
 }
 
 #workspaces button:hover {
-    color: @wsb-d-txt-hover;
+    color: @wsb-text-hover;
     background: none;
-    box-shadow: inset 0 0 0 1px @wsb-d-border-hover;
+    box-shadow: inset 0 0 0 1px @wsb-border-hover;
     text-shadow: none;
 }
 
 #workspaces button.active {
-    color: @wsb-d-txt-active;
-    background-color: @wsb-d-bg-active;
-    box-shadow: inset 0 0 0 2px @wsb-d-border-active;
+    color: @wsb-text-active;
+    background-color: @wsb-background-active;
+    box-shadow: inset 0 0 0 2px @wsb-border-active;
 }
 
 #workspaces button.urgent {
-    background-color: @wsb-d-bg-urgent;
-    box-shadow: inset 0 0 0 2px @wsb-d-border-urgent;
+    background-color: @wsb-background-urgent;
+    box-shadow: inset 0 0 0 2px @wsb-border-urgent;
 }
 
 #workspaces button.special {
-    color: @wss-d-txt;
+    color: @wss-text;
 }
 
 #workspaces button.special:not(.active):hover {
-    color: @wss-d-txt-hover;
-    box-shadow: inset 0 0 0 1px @wss-d-border-hover;
+    color: @wss-text-hover;
+    box-shadow: inset 0 0 0 1px @wss-border-hover;
 }
 
 #workspaces button.special.active {
-    color: @wss-d-txt-active;
-    background-color: @wss-d-bg-active;
-    box-shadow: inset 0 0 0 2px @wss-d-border-active;
+    color: @wss-text-active;
+    background-color: @wss-background-active;
+    box-shadow: inset 0 0 0 2px @wss-border-active;
 }

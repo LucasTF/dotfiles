@@ -1,6 +1,6 @@
 window#waybar {
-  background-color: @wb-d-bg;
-  color: @wb-d-txt;
+  background-color: @wb-background;
+  color: @wb-text;
   font-size: 0.8rem;
   font-weight: bold;
   border-radius: 0;

@@ -1,57 +1,58 @@
 /* COLORS */
-@define-color b16-d-yellow #fabd2f;
-@define-color b16-d-yellow-s #d79921;
-@define-color b16-d-cyan #8ec07c;
-@define-color b16-d-cyan-s #689d6a;
-@define-color b16-d-blue #83a598;
-@define-color b16-d-blue-s #458588;
-@define-color b16-d-purple #d3869b;
-@define-color b16-d-purple-s #b16286;
-@define-color b16-d-red #fb4934;
-@define-color b16-d-red-s #cc241d;
-@define-color b16-d-orange #fe8019;
-@define-color b16-d-orange-s #d65d0e;
-@define-color b16-d-green #b8bb26;
-@define-color b16-d-green-s #98971a;
-@define-color b16-d-gray #928374;
-@define-color b16-black #0a0B0e;
-@define-color b16-white #ffffff;
+@define-color yellow #d79921;
+@define-color yellow-s #fabd2f;
+@define-color cyan #689d6a;
+@define-color cyan-s #8ec07c;
+@define-color blue #458588;
+@define-color blue-s #83a598;
+@define-color magenta #b16286;
+@define-color magenta-s #d3869b;
+@define-color red #cc241d;
+@define-color red-s #fb4934;
+@define-color orange #d65d0e;
+@define-color orange-s #fe8019;
+@define-color green #98971a;
+@define-color green-s #b8bb26;
+@define-color gray #928374;
+@define-color black #282828;
+@define-color white #bdae93;
 
 /* ACCENT COLORS */
-@define-color b16-pr-main @b16-d-green;
-@define-color b16-sc-main @b16-d-green-s;
-@define-color b16-pr-cotr @b16-d-yellow;
-@define-color b16-sc-cotr @b16-d-yellow-s;
+@define-color primary @green;
+@define-color primary-s @green-s;
+@define-color secondary @yellow;
+@define-color secondary-s @yellow-s;
 
-/* DISPLAY */
-@define-color b16-d-bg #282828;
-@define-color b16-d-bg-s #141a24;
-@define-color b16-d-txt #ffffff;
+/* BACKGROUND & FOREGROUND */
+@define-color background #1d2021;
+@define-color background-s #fbf1c7;
+@define-color foreground #ebdbb2;
+@define-color foreground-s #141a24;
 
 /* WAYBAR */
-@define-color wb-d-bg alpha(@b16-d-bg, 0.5);
-@define-color wb-d-txt @b16-d-txt;
+@define-color wb-background alpha(@background, 0.5);
+@define-color wb-text @foreground;
 
 /* WORKSPACES BUTTONS */
-@define-color wsb-d-txt @b16-d-txt;
-@define-color wsb-d-txt-hover @b16-d-green;
-@define-color wsb-d-txt-active @b16-pr-main;
-@define-color wsb-d-bg-active @b16-d-bg-s;
-@define-color wsb-d-bg-urgent @b16-d-red;
-@define-color wsb-d-border-hover @b16-d-green-s;
-@define-color wsb-d-border-active @b16-d-green-s;
-@define-color wsb-d-border-urgent @b16-d-red-s;
+@define-color wsb-text @foreground;
+@define-color wsb-text-hover @primary;
+@define-color wsb-text-active @primary;
+@define-color wsb-background-active @foreground-s;
+@define-color wsb-background-urgent @red;
+@define-color wsb-border-hover @primary-s;
+@define-color wsb-border-active @primary-s;
+@define-color wsb-border-urgent @red-s;
 
 /* SPECIAL WORKSPACES BUTTONS */
-@define-color wss-d-txt alpha(@b16-white, 0.5);
-@define-color wss-d-txt-active @b16-pr-cotr;
-@define-color wss-d-txt-hover @b16-pr-cotr;
-@define-color wss-d-bg @b16-d-bg-s;
-@define-color wss-d-bg-active @b16-d-bg-s;
-@define-color wss-d-border @b16-d-yellow-s;
-@define-color wss-d-border-hover @b16-d-yellow-s;
-@define-color wss-d-border-active @b16-d-yellow-s;
+@define-color wss-text lighter(@foreground-s);
+@define-color wss-text-active @secondary;
+@define-color wss-text-hover @secondary;
+@define-color wss-background @background;
+@define-color wss-background-active @foreground-s;
+@define-color wss-border @secondary-s;
+@define-color wss-border-hover @secondary-s;
+@define-color wss-border-active @secondary-s;
 
 /* START MENU */
-@define-color st-d-bg shade(@b16-sc-main, 0.25);
-@define-color st-d-bar @b16-sc-main;
+@define-color st-background @primary;
+@define-color st-bar @primary;

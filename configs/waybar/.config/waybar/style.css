@@ -35,7 +35,7 @@
   /* Avoid rounded borders under each button name */
   transition: 0.3s;
   font-size: 1rem;
-  color: @wb-d-txt;
+  color: @wb-text;
 }
 
 #custom-session,

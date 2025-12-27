@@ -1,19 +1,19 @@
 #custom-start {
     font-size: 1.6rem;
-    color: @b16-black;
+    color: @foreground-s;
     padding: 0 0.4rem 0 0.6rem;
-    background-color: @b16-sc-main;
+    background-color: @st-background;
     border-radius: 0;
-    text-shadow: 0 0 8px darker(@b16-sc-main);
+    text-shadow: 0 0 8px darker(@primary-s);
 }
 
 #custom-separator {
     font-size: 1.6rem;
-    color: @b16-sc-main;
+    color: @primary;
     background-color: transparent;
     text-shadow: 
-        1px -6px @b16-d-green,
-        7px 0 @b16-d-green,
-        1px 6px @b16-d-green;
+        1px -6px @primary-s,
+        7px 0 @primary-s,
+        1px 6px @primary-s;
     margin-right: 0.8rem;
 }
