@@ -39,3 +39,29 @@
 }
 
 /* MEMORY */
+#memory {
+    color: @md-memory-text;
+    box-shadow: 
+        inset 0 -0.1875rem @md-memory-border,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
+
+#memory.warning {
+    color: @md-memory-warning-text;
+    box-shadow: 
+        inset 0 -0.1875rem @md-memory-warning-border,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
+
+#memory.critical {
+    color: @md-memory-critical-text;
+    box-shadow: 
+        inset 0 -0.1875rem @md-memory-critical-border,
+        inset 0.1875rem 0 @md-info-border-left,
+        inset 0 0.1875rem @md-info-border-up,
+        inset -0.1875rem 0 @md-info-border-right;
+}
