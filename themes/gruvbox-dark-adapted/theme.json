@@ -1,0 +1,30 @@
+{
+    "accent": {
+        "primary": "green",
+        "secondary": "yellow"
+    },
+    "colors": {
+        "red": "#cc241d",
+        "red-shade": "#fb4934",
+        "green": "#98971a",
+        "green-shade": "#b8bb26",
+        "yellow": "#d79921",
+        "yellow-shade": "#fabd2f",
+        "blue": "#458588",
+        "blue-shade": "#83a598",
+        "magenta": "#b16286",
+        "magenta-shade": "#d3869b",
+        "aqua": "#689d6a",
+        "aqua-shade": "#8ec07c",
+        "orange": "#d65d0e",
+        "orange-shade": "#fe8019",
+        "black": "#282828",
+        "black-shade": "#7c6f64",
+        "white": "#bdae93",
+        "white-shade": "#d5c4a1",
+        "background": "#1d2021",
+        "background-shade": "#fbf1c7",
+        "foreground": "#ebdbb2",
+        "foreground-shade": "#141a24"
+    }
+}
