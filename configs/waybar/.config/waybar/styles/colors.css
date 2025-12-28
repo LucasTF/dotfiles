@@ -90,3 +90,15 @@
 
 /* NETWORK */
 @define-color md-network-text @blue;
+
+/* NOTIFICATION CENTER */
+@define-color md-nc-text @wb-text;
+@define-color md-nc-text-hover lighter(@wb-text);
+@define-color md-nc-notification-text @secondary;
+@define-color md-nc-notification-text-hover lighter(@secondary);
+@define-color md-nc-notification-border @secondary-s;
+@define-color md-nc-notification-border-hover lighter(@secondary-s);
+
+/* SESSION/POWER */
+@define-color md-session-text @primary;
+@define-color md-session-text-hover lighter(@primary);
