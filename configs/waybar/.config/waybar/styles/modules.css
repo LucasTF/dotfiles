@@ -113,6 +113,10 @@
 }
 
 /* NOTIFICATION CENTER */
+#custom-nc {
+    color: @md-nc-text;
+}
+
 #custom-nc:hover {
     color: @md-nc-text-hover;
 }
