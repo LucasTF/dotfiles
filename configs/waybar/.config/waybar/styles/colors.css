@@ -87,3 +87,6 @@
 @define-color md-wireplumber-low-text darker(@blue);
 @define-color md-wireplumber-low-border darker(@blue-s);
 @define-color md-wireplumber-muted-text darker(@blue);
+
+/* NETWORK */
+@define-color md-network-text @blue;

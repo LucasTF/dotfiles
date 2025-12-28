@@ -9,8 +9,7 @@
 /* SHARED */
 #mpris,
 #memory,
-#wireplumber,
-#network {
+#wireplumber {
     border-radius: 0.5rem 0.5rem 0 0;
     box-shadow: 
         inset 0 -0.1875rem @md-info-border-down,
@@ -100,4 +99,10 @@
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     box-shadow: inset 0 0 0 0.1875rem @md-border;
+}
+
+/* NETWORK */
+#network {
+    color: @md-network-text;
+    font-size: 1.1rem;
 }
