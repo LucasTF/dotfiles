@@ -8,7 +8,7 @@
 <h3 align="center">My personal Arch Linux/CachyOS + Hyprland configuration and dotfiles</h3>
 
 <p align="center">
-  <img alt="Version 0.2.9" src="https://img.shields.io/badge/Version-0.2.9-green") />
+  <img alt="Version 0.3.0" src="https://img.shields.io/badge/Version-0.3.0-green") />
   <img alt="Hyprland 0.52.2" src="https://img.shields.io/badge/Hyprland-0.52.2-%2300BFE6">
   <img alt="" src="https://img.shields.io/badge/License-MIT-blue") />
 </p>
@@ -20,7 +20,7 @@
 </p>
 
 ![Desktop demo](/desktop.png)
-<p align="center">Desktop 0.2.5</p>
+<p align="center">Desktop 0.3.0</p>
 
 ## Components
 
