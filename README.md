@@ -9,7 +9,7 @@
 
 <p align="center">
   <img alt="Version 0.4.1" src="https://img.shields.io/badge/Version-0.4.1-green") />
-  <img alt="Hyprland 0.53" src="https://img.shields.io/badge/Hyprland-0.53-%2300BFE6">
+  <img alt="Hyprland 0.53.2" src="https://img.shields.io/badge/Hyprland-0.53.2-%2300BFE6">
   <img alt="" src="https://img.shields.io/badge/License-MIT-blue") />
 </p>
 
