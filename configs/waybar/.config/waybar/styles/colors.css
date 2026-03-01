@@ -30,7 +30,7 @@
 @define-color foreground-s #141a24;
 
 /* WAYBAR */
-@define-color wb-background alpha(@background, 0.5);
+@define-color wb-background alpha(@background, 0.7);
 @define-color wb-text @foreground;
 
 /* START MENU */
@@ -41,24 +41,24 @@
 @define-color wsb-text @foreground;
 @define-color wsb-text-hover @primary;
 @define-color wsb-text-active @primary;
-@define-color wsb-background-active @foreground-s;
+@define-color wsb-background-active alpha(@foreground-s, 0.4);
 @define-color wsb-background-urgent @red;
 @define-color wsb-border-hover @primary-s;
 @define-color wsb-border-active @primary-s;
 @define-color wsb-border-urgent @red-s;
 
 /* SPECIAL WORKSPACES BUTTONS */
-@define-color wss-text lighter(@foreground-s);
+@define-color wss-text alpha(@foreground, 0.4);
 @define-color wss-text-active @secondary;
 @define-color wss-text-hover @secondary;
 @define-color wss-background @background;
-@define-color wss-background-active @foreground-s;
+@define-color wss-background-active alpha(@foreground-s, 0.4);
 @define-color wss-border @secondary-s;
 @define-color wss-border-hover @secondary-s;
 @define-color wss-border-active @secondary-s;
 
 /* MODULES */
-@define-color md-background @foreground-s;
+@define-color md-background alpha(@foreground-s, 0.7);
 @define-color md-border @background;
 @define-color md-info-border-up @background;
 @define-color md-info-border-left @background;
