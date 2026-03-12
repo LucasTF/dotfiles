@@ -18,10 +18,10 @@
 @define-color white #bdae93;
 
 /* ACCENT COLORS */
-@define-color primary @green;
-@define-color primary-s @green-s;
-@define-color secondary @yellow;
-@define-color secondary-s @yellow-s;
+@define-color primary @magenta;
+@define-color primary-s @magenta-s;
+@define-color secondary @aqua;
+@define-color secondary-s @aqua-s;
 
 /* BACKGROUND & FOREGROUND */
 @define-color background #1d2021;
