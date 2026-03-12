@@ -8,8 +8,8 @@
 <h3 align="center">My personal Arch Linux/CachyOS + Hyprland configuration and dotfiles</h3>
 
 <p align="center">
-  <img alt="Version 0.5.0" src="https://img.shields.io/badge/Version-0.5.0-green") />
-  <img alt="Hyprland 0.54" src="https://img.shields.io/badge/Hyprland-0.54-%2300BFE6">
+  <img alt="Version 0.5.1" src="https://img.shields.io/badge/Version-0.5.1-green") />
+  <img alt="Hyprland 0.54.1" src="https://img.shields.io/badge/Hyprland-0.54.1-%2300BFE6">
   <img alt="" src="https://img.shields.io/badge/License-MIT-blue") />
 </p>
 
