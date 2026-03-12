@@ -20,7 +20,7 @@
 </p>
 
 ![Desktop demo](/desktop.png)
-<p align="center">Desktop 0.3.0</p>
+<p align="center">Desktop 0.5.1</p>
 
 ## Components
 
