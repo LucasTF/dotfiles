@@ -5,11 +5,4 @@ if hyprctl workspaces -j | jq -e --arg ws "special:spotify" 'any(.[]; .name == $
     exit 0
 fi
 
-if [[ $AL_MUSIC_STREAMING_APP -eq "spotify" ]] then
-    spotify-launcher &
-elif [[ $AL_MUSIC_STREAMING_APP -eq "ncspot" ]] then
-    alacritty --class "spotify" -e ncspot &
-else
-    hyprctl notify 3 5000 0 "Environment Variable 'AL_MUSIC_STREAMING_APP' invalid."
-    exit 1
-fi
+hyprctl dispatch togglespecialworkspace "spotify" & $AL_MUSIC_STREAMING_CLIENT &
