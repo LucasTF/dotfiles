@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if hyprctl workspaces -j | jq -e --arg ws "special:discord" 'any(.[]; .name == $ws)' > /dev/null; then
-    hyprctl dispatch togglespecialworkspace "discord"
+    hyprctl dispatch 'hl.dsp.workspace.toggle_special("discord")'
     exit 0
 fi
 
