@@ -19,6 +19,9 @@ hl.bind(main_mod .. " + V", hl.dsp.window.float())
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region --freeze --clipboard-only"))
 hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("hyprshot -m output -o ~/Pictures/screenshots"))
 
+-- ALT + TAB
+hl.bind("ALT + TAB", hl.dsp.focus({workspace = "previous"}))
+
 -- Move focus with main_mod + arrow keys
 hl.bind(main_mod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(main_mod .. " + right", hl.dsp.focus({ direction = "right" }))
