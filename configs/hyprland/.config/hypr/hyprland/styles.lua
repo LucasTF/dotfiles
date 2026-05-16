@@ -1,9 +1,4 @@
-local th_primary = "b16286ee"
-local th_primary_s = "d3869bee"
-local th_secondary = "689d6aee"
-local th_secondary_s = "8ec07cee"
-
-local th_border_inactive = "928374aa"
+local theme = require("hyprland.theme")
 
 hl.config({
     general = {
@@ -13,8 +8,8 @@ hl.config({
         border_size = 3,
 
         col = {
-            active_border = { colors = {"rgba(" .. th_primary .. ")", "rgba(" .. th_primary_s .. ")"}, angle = 45 },
-            inactive_border = "rgba(" .. th_border_inactive .. ")"
+            active_border = { colors = {"rgba(" .. theme.primary_color .. ")", "rgba(" .. theme.primary_color_s .. ")"}, angle = 45 },
+            inactive_border = "rgba(" .. theme.border_inactive_color .. ")"
         },
 
         resize_on_border = true,
