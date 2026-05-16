@@ -1,4 +1,5 @@
 local apps = require("hyprland.apps")
+local smart_float = require("hyprland.helpers.float")
 
 local main_mod = "SUPER"
 
@@ -13,7 +14,7 @@ hl.bind(main_mod .. " + KP_Delete", hl.dsp.exec_cmd(apps.code))
 hl.bind(main_mod .. " + SPACE", hl.dsp.exec_cmd(apps.menu))
 
 hl.bind(main_mod .. " + C", hl.dsp.window.close())
-hl.bind(main_mod .. " + V", hl.dsp.window.float())
+hl.bind(main_mod .. " + V", smart_float)
 
 -- Print Screen
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region --freeze --clipboard-only"))

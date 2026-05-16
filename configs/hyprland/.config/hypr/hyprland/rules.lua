@@ -4,4 +4,3 @@ require("hyprland.rules.spotify")
 require("hyprland.rules.thunar")
 require("hyprland.rules.gaming")
 require("hyprland.rules.video")
-
