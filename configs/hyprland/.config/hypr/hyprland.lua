@@ -3,7 +3,7 @@ require("hyprland.env")
 require("hyprland.inputs")
 require("hyprland.binds")
 require("hyprland.styles")
-require("hyprland.window_rules")
+require("hyprland.rules")
 
 hl.on("hyprland.start", function ()
     hl.exec_cmd("waybar & hyprpaper & swaync")
