@@ -1,5 +1,5 @@
-require("hyprland.monitors")
 require("hyprland.env")
+require("hyprland.monitors")
 require("hyprland.inputs")
 require("hyprland.binds")
 require("hyprland.styles")

@@ -2,7 +2,7 @@ return {
     terminal = "kitty",
     file_manager = "thunar",
     browser = "brave",
-    menu = "rofi -show drun",
+    menu = "~/.config/rofi/launcher.sh",
     logout = "wlogout -b 3",
     spotify = "~/.config/hypr/hyprland/scripts/spotify.sh",
     discord = "~/.config/hypr/hyprland/scripts/discord.sh",

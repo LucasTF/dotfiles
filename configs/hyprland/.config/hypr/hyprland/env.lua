@@ -3,6 +3,7 @@ hl.env("NVME", "/mnt/nvme")
 hl.env("STORAGE", "/mnt/storage")
 
 -- Custom environment variables
+hl.env("AL_THEME", "basic")
 hl.env("AL_MUSIC_STREAMING_CLIENT", "spotify-launcher")
 hl.env("AL_DISCORD_CLIENT", "vesktop")
 hl.env("AL_CODE_EDITOR", "vscodium")
